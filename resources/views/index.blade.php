@@ -5,42 +5,103 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日付別勤怠ページ</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-  <nav class="">
-    <a class="navbar">Atte</a>
-    <ul class=header>
-      <li class=hom>ホーム</li>
-      <li ciass=>日付一覧</li>
-      <li class=>ログアウト</li>
-    </ul>
-  </nav>
-@extends('layouts.app')
-
-@section('main')
-  <div class="in-table">
-    <div class="text-xl">
-      <div>{{ \Carbon\Carbon::today() }}</div>
+  <header class="header">
+    <h1 class="title">Atte</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">ホーム</a></li>
+          <li class="nav-item"><a href="/attendance">日付一覧</a></li>
+          <li class="nav-item"><a href="/logout">ログアウト</a></li>
+        </ul>
+      </nav>
+  </header>
+<div class="cc">
+  <div class="cc-button">
+    <div class="item">
+      <button type="submit" class="btn-back"><</button>
     </div>
-    <table>
-      <tr class="table-name">
-        <th>名前</th>
-        <th>勤務開始</th>
-        <th>勤務終了</th>
-        <th>休憩時間</th>
-        <th>勤務時間</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td>{{ $user->name }}</td>
-        <td>{{ $attendance->start_time }}</td>
-        <td>{{ $attendance->end_time }}</td>
-        <td>{{ $rest->time}}</td>
-        <td>{{ $attendance->time }}</td>
-      </tr>
-    </table>
-    {{$user->links()}}
+    <div class="item">
+      <h2 class="card">2021-11-01</h2>
+    </div>
+    <div class="item">
+      <button type="submit" class="btn-next">></button>
+    </div>
   </div>
-@endsection
+  <div class="container">
+    <main>
+      <table class="tt-name">
+        <tr class="table-name">
+          <th>名前</th>
+          <th>勤務開始</th>
+          <th>勤務終了</th>
+          <th>休憩時間</th>
+          <th>勤務時間</th>
+          <th></th>
+        </tr>
+        <tr class="table-name">
+          <td>テスト太郎</td>
+          <td>10:00:00</td>
+          <td>20:00:00</td>
+          <td>00:30:00</td>
+          <td>09:30:00</td>
+        </tr>
+        <tr class="table-name">
+          <td>テスト次郎</td>
+          <td>10:00:10</td>
+          <td>20:00:00</td>
+          <td>00:30:00</td>
+          <td>09:29:50</td>
+        </tr>
+        <tr class="table-name">
+          <td>テスト三郎</td>
+          <td>10:00:10</td>
+          <td>20:00:00</td>
+          <td>00:30:00</td>
+          <td>09:29:50</td>
+        </tr>
+        <tr class="table-name">
+          <td>テスト四郎</td>
+          <td>10:00:20</td>
+          <td>20:00:00</td>
+          <td>00:30:00</td>
+          <td>09:29:40</td>
+        </tr>
+        <tr class="table-na">
+          <td>テスト五郎</td>
+          <td>10:00:20</td>
+          <td>20:00:00</td>
+          <td>00:30:00</td>
+          <td>09:29:40</td>
+        </tr>
+      </table>
+    </main>
+    <div class="pe">
+      <ul class="example2">
+        <li><</li>
+        <li class="this">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>…</li>
+        <li>20</li>
+        <li>21</li>
+        <li>></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+    <small> Atte,inc.</small>
+  </footer>
 </body>
 </html>

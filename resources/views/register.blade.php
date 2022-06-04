@@ -5,47 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ユーザー新規登録ページ</title>
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-@section('content')
-<div class="new">
-  <div class="frame">{{ __('Login') }}</div>
-      <div class="frame-body">
-        <form method="POST" action="{{ route('login') }}">
-        @csrf
-          <div class="frame-group one">
-            <label for="name">名前</label>
-            <input type="text" id="name" name="name" class="form-control">
-          </div>
-          <div class="frame-group two">
-            <label for="email">メールアドレス</label>
-            <input type="text" id="email" name="email" class="form-control">
-          </div>
-          <div class="frame-group three">
-            <label for="password">パスワード</label>
-            <input type="password" id="password" name="password" class="form-control">
-          </div>
-          <div class="frame-group four">
-            <label for="password">確認用パスワード</label>
-            <input type="password" id="password" name="password" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-primary">会員登録</button>
-          {{ csrf_field() }}
+<header class="header">
+    <h1 class="title">Atte</h1>
+  </header>
+<div class="cc">
+<h2 class="card">会員登録</h2>
+  <div class="container">
+    <main>
+      <div class="card-body">
+        <div class="form-group iow">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="名前">
 
-          <div class="">
-            <p>アカウントをお持ちでない方はこちらから</p>
-            <button type="submit">ログイン</button>
-          </div>
+        <div class="form-group row">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" class="form-control" placeholder="メールアドレス">
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="パスワード">
+        </div>
+        <div class="form-group">
+          <label for="lastpassword"></label>
+          <input type="password" id="lastpassword" name="lastpassword" class="form-control" placeholder="確認用パスワード">
+        </div>
+        <button type="button" class="btn-primary">会員登録</button>
 
-                @error('email')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                @enderror
-              </div>
-          </div>
+        <div class="aka">
+          <p class="size">アカウントをお持ちの方はこちらから</p>
+          <button type="button" class="btn-link">ログイン</button>
+        </div>
       </div>
+    </main>
+  </div>
 </div>
-@endsection
+  <footer class="footer">
+    <small> Atte,inc.</small>
+  </footer>
 </body>
 </html>

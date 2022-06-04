@@ -1,0 +1,96 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 10%;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.title{
+  font-size: 24px;
+  width: 80px;
+  font-size: 30px;
+}
+
+.nav-list{
+  display: flex;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+footer{
+  text-align: center;
+}
+
+.form-control {
+  margin-top: 5px;
+  font-size: 20px;
+  width: 48%;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 5px 5px 5px 5px;
+  border-color:#9C9C9C;
+  background-color: #F2F2F2;
+}
+
+.btn-primary{
+  margin-top: 5px;
+  font-size: 20px;
+  width: 50%;
+  padding: 5px;
+  background-color: #214BE0;
+  color:#fff;
+  margin-top: 20px;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+}
+
+.card {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+
+.cc{
+  background-color: #F2F2F2;
+  height: 600px;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.aka{
+  width: 50%;
+  margin-top: 30px;
+  line-height:30px;
+  text-align: center;
+}
+
+.container{
+  width: 50%;
+  height: 50%;
+      /* 水平・垂直方向の中央揃え */
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  margin: -25px 0 0 -25px
+}
+
+.btn-link{
+  border: none;
+  color: #214BE0;
+  font-size: 20px;
+}
+
+.size{
+  color:#9C9C9C;
+}

@@ -7,18 +7,18 @@ use App\Models\Attendance;
 
 class AuthenticatedSessionController extends Controller
 {
-    public function index(Request $request)
+    public function store(Request $request)
     {
-        
+        return view('login');
     }
 
-    public function start(Request $request)
+    public function create(Request $request)
     {
-        
+        return view('login');
     }
 
-    public function end(Request $request)
+    public function destroy(Request $request)
     {
-        
+        return view('logout');
     }
 }

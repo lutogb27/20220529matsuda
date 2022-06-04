@@ -9,11 +9,11 @@ class RestController extends Controller
 {
     public function start(Request $request)
     {
-        
+        return view('stamping');
     }
 
     public function end(Request $request)
     {
-        
+        return view('stamping');
     }
 }

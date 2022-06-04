@@ -7,8 +7,8 @@ use app\Models\Attendance;
 
 class AttendanceController extends Controller
 {
-        public function index(Request $request)
+    public function index(Request $request)
     {
-        
+        return view('index');
     }
 }
