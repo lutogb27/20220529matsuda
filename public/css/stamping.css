@@ -32,86 +32,73 @@ a {
   margin-right: 30px;
 }
 
-footer {
-  text-align: center;
+.main {
+  background-color: #F2F2F2;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.card {
+.main-title {
   font-size: 20px;
   text-align: center;
   padding: 50px;
 }
 
-.cc {
-  background-color: #F2F2F2;
-  height: 600px;
-  width: 85%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.container {
-  width: 60%;
-  height: 60%;
-  /* 水平・垂直方向の中央揃え */
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  margin: -25px 0 0 -25px
-}
-
-.size {
-  color: #9C9C9C;
-}
-
-.schedule-time{
-  display:flex;
+.time-item {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.timely{
+.card{
   width: 50%;
   padding-bottom: 50px;
+  text-align: center;
 }
 
-.btn-starter{
+.btn-work-start {
   font-size: 20px;
-  width: 90%;
-  height: 150px;
-  background-color:#fff;
+  height: 200px;
+  width: 50%;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+  color: #9C9C9C;
+}
+
+.btn-work-end {
+  font-size: 20px;
+  height: 200px;
+  width: 50%;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+
+.btn-rest-start {
+  font-size: 20px;
+  height: 200px;
+  width: 50%;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+
+.btn-rest-end {
+  font-size: 20px;
+  height: 200px;
+  width: 50%;
+  background-color: #fff;
   border: none;
   border-radius: 5px 5px 5px 5px;
   font-weight: bold;
   color: #9C9C9C;
 }
 
-.btn-termination {
-  font-size: 20px;
-  width: 90%;
-  height: 150px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-}
-
-.btn-kaisi {
-  font-size: 20px;
-  width: 90%;
-  height: 150px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-}
-
-.btn-close {
-  font-size: 20px;
-  width: 90%;
-  height: 150px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-  color: #9C9C9C;
+footer {
+  text-align: center;
 }

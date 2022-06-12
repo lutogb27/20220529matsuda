@@ -19,29 +19,25 @@
         </ul>
       </nav>
   </header>
-<div class="cc">
-<h2 class="card">福場凛太郎さんお疲れ様です!</h2>
-  <div class="container">
-    <main>
-      <div class="schedule-time">
-        <div class="timely">
-          <button type="submit" class="btn-starter">勤務開始</button>
-        </div>
-        <div class="timely">
-          <button type="submit" class="btn-termination">勤務終了</button>
-        </div>
-        <div class="timely">
-          <button type="submit" class="btn-kaisi">休憩開始</button>
-        </div>
-        <div class="timely">
-          <button type="submit" class="btn-close">休憩終了</button>
-        </div>
-      </div>
-    </main>
+<div class="main">
+<h2 class="main-title">福場凛太郎さんお疲れ様です!</h2>
+  <div class="time-item">
+    <div class="card">
+      <button type="submit" class="btn-work-start">勤務開始</button>
+    </div>
+    <div class="card">
+      <button type="submit" class="btn-work-end">勤務終了</button>
+    </div>
+    <div class="card">
+      <button type="submit" class="btn-rest-start">休憩開始</button>
+    </div>
+    <div class="card">
+      <button type="submit" class="btn-rest-end">休憩終了</button>
+    </div>
   </div>
 </div>
-    <footer class="footer">
-      <small> Atte,inc.</small>
-    </footer>
+  <footer class="footer">
+    <small> Atte,inc.</small>
+  </footer>
 </body>
 </html>

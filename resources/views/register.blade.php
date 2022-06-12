@@ -12,32 +12,30 @@
 <header class="header">
     <h1 class="title">Atte</h1>
   </header>
-<div class="cc">
-<h2 class="card">会員登録</h2>
-  <div class="container">
-    <main>
-      <div class="card-body">
-        <div class="form-group iow">
-          <label for="name"></label>
-          <input type="text" id="name" name="name" class="form-control" placeholder="名前">
+<div class="main">
+<h2 class="main-title">会員登録</h2>
+  <div class="form">
+    <div class="form-group">
+      <label for="name"></label>
+      <input type="text" id="name" name="name" class="form-screen" placeholder="名前">
+    </div>
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="text" id="email" name="email" class="form-screen" placeholder="メールアドレス">
+    </div>
+    <div class="form-group">
+      <label for="password"></label>
+      <input type="password" id="password" name="password" class="form-screen" placeholder="パスワード">
+    </div>
+    <div class="form-group">
+      <label for="lastpassword"></label>
+      <input type="password" id="lastpassword" name="lastpassword" class="form-screen" placeholder="確認用パスワード">
+    </div>
+    <button type="button" class="btn-sign-up">会員登録</button>
 
-        <div class="form-group row">
-          <label for="email"></label>
-          <input type="text" id="email" name="email" class="form-control" placeholder="メールアドレス">
-        </div>
-        <div class="form-group">
-          <label for="password"></label>
-          <input type="password" id="password" name="password" class="form-control" placeholder="パスワード">
-        </div>
-        <div class="form-group">
-          <label for="lastpassword"></label>
-          <input type="password" id="lastpassword" name="lastpassword" class="form-control" placeholder="確認用パスワード">
-        </div>
-        <button type="button" class="btn-primary">会員登録</button>
-
-        <div class="aka">
-          <p class="size">アカウントをお持ちの方はこちらから</p>
-          <button type="button" class="btn-link">ログイン</button>
+        <div class="login">
+          <p class="login-title">アカウントをお持ちの方はこちらから</p>
+          <button type="button" class="btn-login">ログイン</button>
         </div>
       </div>
     </main>

@@ -31,24 +31,65 @@ a {
   color: black;
 }
 
-footer {
+.main {
+  background-color: #F2F2F2;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.date-button {
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  padding: 20px 30px;
   text-align: center;
 }
 
-.cc {
-  background-color: #F2F2F2;
-  height: 600px;
-  width: 85%;
-  margin: 0 auto;
-  position: relative;
+.btn-back {
+  background-color: #fff;
+  color: #214BE0;
+  border-color: #214BE0;
 }
 
-.table-name {
+.btn-next {
+  background-color: #fff;
+  color: #214BE0;
+  border-color: #214BE0;
+}
+
+.date {
+  font-size: 24px;
+}
+
+.data-list {
+  width: 100%;
+  height: 100%;
+}
+
+.data-list-inner {
+  height: 350px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.data-list-unit {
   border-bottom: solid 1px #909090;
   border-top: solid 1px #909090;
   height: 50px;
   font-size: 20px;
   line-height: 3;
+  text-align: center;
+}
+
+.data-list-unit:last-of-type{
+  border-bottom: none;
 }
 
 tr {
@@ -56,77 +97,25 @@ tr {
   padding: 10px;
 }
 
-.cc-button{
-  font-size: 20px;
+.pagination {
+  height: 100px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 8%;
-  width: 30%;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 50px;
 }
 
-.btn-back{
-  background-color: #fff;
-  color: #214BE0;
-  border-color: #214BE0;
-}
-
-.btn-next{
-  background-color: #fff;
-  color: #214BE0;
-  border-color: #214BE0;
-}
-
-.tt-name{
-  height: 350px;
-  width: 80%;
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  /* 水平・垂直方向の中央揃え */
-  position: absolute;
-  left: 10%;
-  margin: -25px 0 0 -25px;
-}
-
-.item {
-  float: left;
-  padding: 20px 30px;
-  text-align: center;
-}
-
-.example2 li {
+.toc li {
   display: inline;
   padding: 10px 15px;
   color: #214BE0;
   background-color: #fff;
 }
 
-.example2 .this {
+.toc .this {
   background-color: #214BE0;
   color: #fff;
 }
 
-.pe{
-  height: 100px;
+
+footer {
   text-align: center;
-  margin-right: 15%;
-  margin-top: 50px;
-}
-
-.card{
-  font-size: 24px;
-}
-
-.table-na {
-  border-top: solid 1px #909090;
-  height: 50px;
-  font-size: 20px;
-  line-height: 3;
 }
