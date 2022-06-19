@@ -33,7 +33,7 @@ a {
 
 .main {
   background-color: #F2F2F2;
-  height: 600px;
+  height: calc(100vh - 70px - 16px);
   width: 100%;
   margin: 0 auto;
 }

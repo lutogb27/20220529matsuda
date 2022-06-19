@@ -23,16 +23,16 @@
 <h2 class="main-title">福場凛太郎さんお疲れ様です!</h2>
   <div class="time-item">
     <div class="card">
-      <button type="submit" class="btn-work-start">勤務開始</button>
+      <button type="submit" class="btn">勤務開始</button>
     </div>
     <div class="card">
-      <button type="submit" class="btn-work-end">勤務終了</button>
+      <button type="submit" class="btn">勤務終了</button>
     </div>
     <div class="card">
-      <button type="submit" class="btn-rest-start">休憩開始</button>
+      <button type="submit" class="btn">休憩開始</button>
     </div>
     <div class="card">
-      <button type="submit" class="btn-rest-end">休憩終了</button>
+      <button type="submit" class="btn">休憩終了</button>
     </div>
   </div>
 </div>

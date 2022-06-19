@@ -34,7 +34,7 @@ a {
 
 .main {
   background-color: #F2F2F2;
-  height: 600px;
+  height: calc(100vh - 70px - 16px);
   width: 100%;
   margin: 0 auto;
 }
@@ -49,6 +49,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card{
@@ -57,41 +59,10 @@ a {
   text-align: center;
 }
 
-.btn-work-start {
+.btn {
   font-size: 20px;
   height: 200px;
-  width: 50%;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-  color: #9C9C9C;
-}
-
-.btn-work-end {
-  font-size: 20px;
-  height: 200px;
-  width: 50%;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-}
-
-.btn-rest-start {
-  font-size: 20px;
-  height: 200px;
-  width: 50%;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: bold;
-}
-
-.btn-rest-end {
-  font-size: 20px;
-  height: 200px;
-  width: 50%;
+  width: 90%;
   background-color: #fff;
   border: none;
   border-radius: 5px 5px 5px 5px;
