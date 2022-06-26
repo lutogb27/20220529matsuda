@@ -6,22 +6,20 @@ use Illuminate\Http\Request;
 use App\Models\Attendance;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthenticatedSessionController extends Controller
 {
     public function store(LoginRequest $request)
     {
-        $email = $request->$email;
-        $password = $request->$password;
+        $email = $request->email;
+        $password = $request->password;
 
-        $hash_password = Hash::make($password);
+        if(Auth::attempt(['email' => $email, 'password' => $password])){
+            return redirect('/');
+        }
 
-        User::create([
-            'email' => $email,
-            'password' => $hash_password,
-        ]);
-
-        return redirect('/');
+        return back();
     }
 
     public function create(Request $request)
@@ -31,6 +29,7 @@ class AuthenticatedSessionController extends Controller
 
     public function destroy(Request $request)
     {
+        Auth::logout();
         return redirect('login');
     }
 }

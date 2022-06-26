@@ -14,7 +14,7 @@
   </header>
   <main class="main">
     <h2 class="main-title">ログイン</h2>
-    <form class="form" mathod="post" action="/login">
+    <form class="form" method="post" action="/login">
       @csrf
       <div class="form-group">
         <label for="email"></label>

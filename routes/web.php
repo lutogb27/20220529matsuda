@@ -10,16 +10,19 @@ use App\Http\Controllers\WorkController;
 Route::get('/register', [RegisteredUserController::class, 'create']);
 Route::post('/register', [RegisteredUserController::class, 'store']);
 
-Route::get('/login', [AuthenticatedSessionController::class, 'create']);
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy']);
 
-Route::get('/', [WorkController::class, 'index']);
-Route::post('/work/start', [WorkController::class, 'start']);
-Route::post('/work/end', [WorkController::class, 'end']);
+Route::middleware(['auth'])->group(function(){
+  Route::get('/logout', [AuthenticatedSessionController::class, 'destroy']);
 
-Route::post('/rest/start', [RestController::class, 'start']);
-Route::post('/rest/end', [RestController::class, 'end']);
+  Route::get('/', [WorkController::class, 'index']);  
+  Route::post('/work/start', [WorkController::class, 'start']);
+  Route::post('/work/end', [WorkController::class, 'end']);
 
-Route::get('/attendance', [AttendanceController::class, 'index']);
+  Route::post('/rest/start', [RestController::class, 'start']);
+  Route::post('/rest/end', [RestController::class, 'end']);
 
+  Route::get('/attendance', [AttendanceController::class, 'index']);
+
+});

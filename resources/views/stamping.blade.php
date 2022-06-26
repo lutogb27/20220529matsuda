@@ -19,23 +19,38 @@
         </ul>
       </nav>
   </header>
-<div class="main">
-<h2 class="main-title">福場凛太郎さんお疲れ様です!</h2>
-  <div class="time-item">
-    <div class="card">
-      <button type="submit" class="btn">勤務開始</button>
-    </div>
-    <div class="card">
-      <button type="submit" class="btn">勤務終了</button>
-    </div>
-    <div class="card">
-      <button type="submit" class="btn">休憩開始</button>
-    </div>
-    <div class="card">
-      <button type="submit" class="btn">休憩終了</button>
-    </div>
-  </div>
-</div>
+  <main class="main">
+    <h2 class="main-title">福場凛太郎さんお疲れ様です!</h2>
+    <form class="form" method="post" action="/">
+      @csrf
+      <div class="time-item">
+        <div class="card">
+          <form class="timestamp" action="/work/start" method="post">
+          @csrf
+            <button type="submit" class="btn">勤務開始</button>
+          </form>
+        </div>
+        <div class="card">
+          <form class="timestamp" action="/work/start" method="post">
+          @csrf
+            <button type="submit" class="btn">勤務終了</button>
+          </form>
+        </div>
+        <div class="card">
+          <form class="timestamp" action="/rest/start" method="post">
+          @csrf
+            <button type="submit" class="btn">休憩開始</button>
+          </form>
+        </div>
+        <div class="card">
+          <form class="timestamp" action="/rest/end" method="post">
+          @csrf
+            <button type="submit" class="btn">休憩終了</button>
+          </form>
+        </div>
+      </div>
+    </form>
+  </main>
   <footer class="footer">
     <small> Atte,inc.</small>
   </footer>
