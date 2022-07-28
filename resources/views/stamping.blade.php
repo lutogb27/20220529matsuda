@@ -20,9 +20,7 @@
       </nav>
   </header>
   <main class="main">
-    <h2 class="main-title">福場凛太郎さんお疲れ様です!</h2>
-    <form class="form" method="post" action="/">
-      @csrf
+    <h2 class="main-title">{{Auth::user()->name}}さんお疲れ様です!</h2>
       <div class="time-item">
         <div class="card">
           <form class="timestamp" action="/work/start" method="post">
@@ -31,7 +29,7 @@
           </form>
         </div>
         <div class="card">
-          <form class="timestamp" action="/work/start" method="post">
+          <form class="timestamp" action="/work/end" method="post">
           @csrf
             <button type="submit" class="btn">勤務終了</button>
           </form>
@@ -49,7 +47,7 @@
           </form>
         </div>
       </div>
-    </form>
+      <p>{{ Session('message')}}</p>
   </main>
   <footer class="footer">
     <small> Atte,inc.</small>

@@ -70,11 +70,9 @@ a {
 
 .data-list {
   width: 100%;
-  height: 100%;
 }
 
 .data-list-inner {
-  height: 350px;
   width: 80%;
   margin: 0 auto;
 }
@@ -98,23 +96,14 @@ tr {
 }
 
 .pagination {
-  height: 100px;
   text-align: center;
   margin-top: 50px;
+  font-size: 20px;
 }
 
-.toc li {
-  display: inline;
-  padding: 10px 15px;
-  color: #214BE0;
-  background-color: #fff;
+.page-item {
+  display: inline-block;
 }
-
-.toc .this {
-  background-color: #214BE0;
-  color: #fff;
-}
-
 
 footer {
   text-align: center;
