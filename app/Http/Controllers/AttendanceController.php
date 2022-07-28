@@ -15,7 +15,7 @@ class AttendanceController extends Controller
     {
         $today = Carbon::today();
 
-        $attendances = Attendance::where('date',$today)->paginate(1);
+        $attendances = Attendance::where('date',$today)->paginate(5);
         Paginator::useBootstrap();
 
         return view('index', ['attendances' => $attendances]);
